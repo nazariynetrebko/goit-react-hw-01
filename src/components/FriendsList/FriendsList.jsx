@@ -1,5 +1,5 @@
 import FriendListItem from './FriendsListItem';
-import './FriendList.css';
+import css from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   if (!Array.isArray(friends)) {
@@ -8,14 +8,14 @@ const FriendList = ({ friends }) => {
   }
 
   return (
-    <ul className="friend-list">
+    <ul className={css.friendList}>
       {friends.map((friend) => (
         <li key={friend.id}>
           <FriendListItem
             avatar={friend.avatar}
             name={friend.name}
             isOnline={friend.isOnline}
-          ></FriendListItem>
+          />
         </li>
       ))}
     </ul>

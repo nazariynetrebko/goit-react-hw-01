@@ -1,4 +1,4 @@
-.friend-card {
+.friendCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@
   width: 150px;
 }
 
-.friend-name {
+.friendName {
   font-weight: bold;
   margin: 10px 0;
 }

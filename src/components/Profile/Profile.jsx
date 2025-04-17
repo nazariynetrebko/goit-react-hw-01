@@ -1,31 +1,31 @@
 import clsx from 'clsx';
 import { FaHeart, FaEye, FaUserFriends } from 'react-icons/fa';
-import './Profile.css';
+import css from './Profile.module.css';
 
 const Profile = ({ username, tag, location, image, stats }) => {
   return (
-    <div className={clsx('profile-card')}>
+    <div className={clsx(css.profileCard)}>
       <div>
-        <img src={image} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <img src={image} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
-      <ul className="stats-list">
-        <li className="stats-item">
-          <FaUserFriends className="icon" />
-          <span className="stats-label">Followers</span>
-          <span className="stats-value">{stats.followers}</span>
+      <ul className={css.statsList}>
+        <li className={css.statsItem}>
+          <FaUserFriends className={css.icon} />
+          <span className={css.statsLabel}>Followers</span>
+          <span className={css.statsValue}>{stats.followers}</span>
         </li>
-        <li className="stats-item">
-          <FaEye className="icon" />
-          <span className="stats-label">Views</span>
-          <span className="stats-value">{stats.views}</span>
+        <li className={css.statsItem}>
+          <FaEye className={css.icon} />
+          <span className={css.statsLabel}>Views</span>
+          <span className={css.statsValue}>{stats.views}</span>
         </li>
-        <li className="stats-item">
-          <FaHeart className="icon" />
-          <span className="stats-label">Likes</span>
-          <span className="stats-value">{stats.likes}</span>
+        <li className={css.statsItem}>
+          <FaHeart className={css.icon} />
+          <span className={css.statsLabel}>Likes</span>
+          <span className={css.statsValue}>{stats.likes}</span>
         </li>
       </ul>
     </div>

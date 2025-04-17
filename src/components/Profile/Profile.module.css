@@ -1,4 +1,4 @@
-.profile-card {
+.profileCard {
   width: 300px;
   margin: 20px auto;
   padding: 20px;
@@ -33,7 +33,7 @@
   margin-bottom: 20px;
 }
 
-.stats-list {
+.statsList {
   list-style: none;
   padding: 0;
   display: flex;
@@ -41,22 +41,23 @@
   margin-top: 20px;
 }
 
-.stats-item {
+.statsItem {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.stats-label {
+.statsLabel {
   font-size: 14px;
   color: #333;
 }
 
-.stats-value {
+.statsValue {
   font-size: 18px;
   font-weight: bold;
   color: #000;
 }
+
 .icon {
   fill: #000;
 }
