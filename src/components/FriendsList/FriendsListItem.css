@@ -1,0 +1,26 @@
+.friend-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.friend-name {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.status {
+  font-size: 14px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
