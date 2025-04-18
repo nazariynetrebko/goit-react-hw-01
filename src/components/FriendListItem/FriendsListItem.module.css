@@ -6,11 +6,13 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 150px;
+  background-color: #fff;
 }
 
 .friendName {
   font-weight: bold;
   margin: 10px 0;
+  color: #333;
 }
 
 .status {
