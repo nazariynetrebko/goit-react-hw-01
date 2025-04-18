@@ -5,7 +5,7 @@
 
 .th {
   background-color: black;
-  color: white;
+  color: white; /* Білий текст на темному фоні */
   padding: 8px;
   text-align: left;
 }
@@ -14,19 +14,20 @@
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  color: #333;
+  color: #333; /* Темний текст на світлому фоні */
 }
 
 .tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2; /* Світло-сірий фон для парних рядків */
 }
 
 .typeCell {
   display: flex;
   align-items: center;
-  color: #333;
+  color: #333; /* Темний текст для типу транзакції */
 }
 
 .typeCell > svg {
   margin-right: 8px;
+  fill: #333; /* Додано, щоб іконки відповідали кольору тексту */
 }
